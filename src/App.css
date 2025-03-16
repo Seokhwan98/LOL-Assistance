@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Use a suitable font-family */
+  background-color: #e6e6e6; /* Light gray background color */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 20vh; /* Adjust the height as needed */
+  margin-bottom: 20px; /* Add margin to create space between the header and the input */
+  background-color: #e6e6e6; /* Black background color for the header */
+  color: #000000; /* White text color for the header */
+}
+
+.header-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title-container {
+  flex-direction: row;
+  justify-content: center;
+  display: flex; /* 가로 정렬을 위해 flex 사용 */
+  align-items: center; /* 로고와 텍스트를 수직 방향 중앙 정렬 */
+  cursor: pointer;
+}
+
+.logo {
+  margin-right: 10px; /* Add margin between logo and text*/
+  padding: 0;
+  width: 100px;
+  height: auto;
+}
+
+.search-container {
+  display: flex;
+  width: 20%; /* Adjust the width as needed */
+  margin: 10px auto; /* Center the container */
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 18px; /* Adjust the font size as needed */
+  border: 1px solid #000000; /* White border for input */
+  border-radius: 5px;
+  margin-right: 10px; /* Space between input and button */
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 16px; /* Adjust the font size as needed */
+  background-color: #c89b3c; /* Green color for the button */
+  color: #091428; /* White text color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.champion-container {
+  display: flex;
+  width: 90%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.text-container {
+  flex: 1;
+  margin-right: 20px; /* Adjust the margin as needed */
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-container p {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.champion-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.champion-info {
+  display: flex;
+  align-items: center;
+  padding: 1rem; /* Adjust the padding as needed */
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+
+.champion-info p {
+  margin: 10px; /* Remove default margin for the paragraph */
+}
+
+.champion-info img {
+  max-width: 60px; /* Adjust the maximum width as needed */
+  max-height: 60px; /* Adjust the maximum height as needed */
+  padding: 10px;
+}
+
+.blue-team,
+.red-team {
+  flex: 1;
+  margin: 20px; /* Adjust the margin as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  font-family: "Roboto", sans-serif;
+}
+.blue-team {
+  border: 5px solid #1900ff;
+  border-radius: 10px; /* Adjust the border-radius for rounded edges */
+  background-color: #d9e0e7; /* Background color for the team container */
+}
+
+.red-team {
+  border: 5px solid #ff0000;
+  border-radius: 10px; /* Adjust the border-radius for rounded edges */
+  background-color: #d5d9dd; /* Background color for the team container */
+}
+
+.blue-team h3,
+.red-team h3 {
+  min-width: 300px;
+}
